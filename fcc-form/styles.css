@@ -1,0 +1,110 @@
+/* Reset de estilos predeterminados del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal y fallback */
+    line-height: 1.6; /* Espaciado entre líneas */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    min-height: 100vh; /* Altura mínima del 100% de la ventana */
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 90%; /* Ancho del 90% del contenedor padre */
+    max-width: 500px; /* Ancho máximo */
+}
+
+/* Estilos del formulario */
+form {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Organiza elementos en columna */
+    gap: 1.5rem; /* Espacio entre elementos */
+}
+
+/* Estilos del título */
+h2 {
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+/* Contenedor de cada grupo de campos */
+.form-group {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Organiza elementos en columna */
+    gap: 0.5rem; /* Espacio entre elementos */
+}
+
+/* Estilos de las etiquetas */
+label {
+    color: #2c3e50; /* Color del texto */
+    font-weight: 500; /* Peso de la fuente */
+    margin: 0.5rem 0; /* Márgenes verticales */
+}
+
+/* Estilos de los campos de entrada */
+input {
+    width: 100%; /* Ancho completo */
+    padding: 0.8rem; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: border-color 0.3s ease; /* Transición suave del borde */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+/* Estilos del área de texto */
+textarea {
+    width: 100%; /* Ancho completo */
+    padding: 0.8rem; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: border-color 0.3s ease; /* Transición suave del borde */
+    min-height: 120px; /* Altura mínima */
+    resize: vertical; /* Permite redimensionar verticalmente */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+/* Estilos de los campos cuando están en foco */
+input:focus, textarea:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    border-color: #4CAF50; /* Color verde del borde */
+}
+
+/* Estilos del botón */
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    padding: 0.8rem 1.5rem; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: background-color 0.3s ease; /* Transición suave del color */
+}
+
+/* Estilos del botón al pasar el mouse */
+button:hover {
+    background-color: #45a049; /* Color verde más oscuro */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1.5rem; /* Espaciado interno reducido */
+        width: 95%; /* Ancho aumentado para móviles */
+    }
+}

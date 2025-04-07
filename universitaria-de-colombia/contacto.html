@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Universidad de Colombia</title>
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilos generales del cuerpo de la página */
+        body {
+            max-width: 1200px; /* Ancho máximo del contenido */
+            margin: 0 auto; /* Centrado automático */
+            padding: 20px; /* Espaciado interno */
+            font-family: Arial, sans-serif; /* Fuente predeterminada */
+        }
+        /* Estilos del encabezado */
+        header {
+            text-align: center; /* Centrado del texto */
+            margin-bottom: 2rem; /* Margen inferior */
+        }
+        /* Estilos de las secciones principales */
+        section {
+            margin-bottom: 2rem; /* Margen inferior */
+            padding: 1rem; /* Espaciado interno */
+            background-color: #f9f9f9; /* Fondo gris claro */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        /* Estilos de los campos del formulario */
+        fieldset {
+            margin-bottom: 1.5rem; /* Margen inferior */
+            padding: 1rem; /* Espaciado interno */
+            border-radius: 8px; /* Bordes redondeados */
+            background-color: white; /* Fondo blanco */
+        }
+        /* Estilos del formulario */
+        form {
+            max-width: 800px; /* Ancho máximo */
+            margin: 0 auto; /* Centrado automático */
+        }
+        /* Estilos de los grupos de campos */
+        .form-group {
+            margin-bottom: 1rem; /* Margen inferior */
+        }
+        /* Estilos de los campos de entrada */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%; /* Ancho completo */
+            padding: 8px; /* Espaciado interno */
+            margin-top: 5px; /* Margen superior */
+            border: 1px solid #ddd; /* Borde gris claro */
+            border-radius: 4px; /* Bordes redondeados */
+        }
+        /* Estilos del botón de envío */
+        button {
+            display: block; /* Display en bloque */
+            margin: 1rem auto; /* Márgenes automáticos */
+            padding: 10px 20px; /* Espaciado interno */
+            background-color: #4CAF50; /* Color de fondo verde */
+            color: white; /* Color del texto */
+            border: none; /* Sin bordes */
+            border-radius: 4px; /* Bordes redondeados */
+            cursor: pointer; /* Cursor tipo puntero */
+        }
+        /* Efecto hover del botón */
+        button:hover {
+            background-color: #45a049; /* Color verde más oscuro */
+        }
+        /* Estilos del pie de página */
+        footer {
+            text-align: center; /* Centrado del texto */
+            margin-top: 2rem; /* Margen superior */
+            padding: 1rem; /* Espaciado interno */
+            background-color: #f9f9f9; /* Fondo gris claro */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Contenedor flex para título y logo -->
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+            <h1>Contacto - Universidad de Colombia</h1>
+            <img src="universitaria-de-colombia.png" alt="Logo Universidad de Colombia" width="100" height="100">
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de información de contacto -->
+        <section>
+            <h2>Información de Contacto</h2>
+            <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos:</p>
+            <address>
+                <p>Teléfono: +57 1 234 5678</p>
+                <p>Correo electronico: <a href="mailto:contacto@universidaddec.edu.co">contacto@universidaddec.edu.co</a></p>
+                <p>Dirección: Calle 123, Bogotá, Colombia</p>
+                <p>Horario de Atención: Lunes a Viernes, 9:00 AM - 5:00 PM</p>
+            </address>
+        </section>
+
+        <!-- Sección de redes sociales -->
+        <section>
+            <h2>Redes Sociales</h2>
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/universidaddec" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/universidaddec" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/universidaddec" target="_blank">Instagram</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Sección del formulario de contacto -->
+        <section>
+            <h2>Formulario de Contacto</h2>
+            
+            <!-- Formulario principal -->
+            <form action="#" method="post">
+                <!-- Sección de datos personales -->
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <!-- Tipo de documento -->
+                    <div>
+                        <label>Tipo de Documento:</label><br>
+                        <input type="radio" id="cedula" name="tipoDocumento" value="cedula" required>
+                        <label for="cedula">Cédula</label><br>
+                        <input type="radio" id="pasaporte" name="tipoDocumento" value="pasaporte">
+                        <label for="pasaporte">Pasaporte</label><br>
+                        <input type="radio" id="permiso" name="tipoDocumento" value="permiso">
+                        <label for="permiso">Permiso</label>
+                    </div>
+                    <!-- Número de documento -->
+                    <div>
+                        <label for="numeroDocumento">Número de Documento:</label><br>
+                        <input type="number" id="numeroDocumento" name="numeroDocumento" required>
+                    </div>
+                    <!-- Nombres -->
+                    <div>
+                        <label for="primerNombre">Primer Nombre:</label><br>
+                        <input type="text" id="primerNombre" name="primerNombre" required>
+                    </div>
+                    <div>
+                        <label for="segundoNombre">Segundo Nombre:</label><br>
+                        <input type="text" id="segundoNombre" name="segundoNombre">
+                    </div>
+                    <!-- Apellidos -->
+                    <div>
+                        <label for="primerApellido">Primer Apellido:</label><br>
+                        <input type="text" id="primerApellido" name="primerApellido" required>
+                    </div>
+                    <div>
+                        <label for="segundoApellido">Segundo Apellido:</label><br>
+                        <input type="text" id="segundoApellido" name="segundoApellido">
+                    </div>
+                    <!-- Fecha de nacimiento -->
+                    <div>
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                    </div>
+                    <!-- Información de contacto -->
+                    <div>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <!-- Subida de hoja de vida -->
+                    <div>
+                        <label for="hojaVida">Hoja de Vida (PDF):</label><br>
+                        <input type="file" id="hojaVida" name="hojaVida" accept=".pdf" required>
+                        <p style="font-size: 0.8em; color: #666;">Por favor, suba su hoja de vida en formato PDF</p>
+                    </div>
+                </fieldset>
+
+                <!-- Sección de estudios realizados -->
+                <fieldset>
+                    <legend>Estudios realizados</legend>
+                    <div>
+                        <label>Nivel de estudios:</label><br>
+                        <!-- Checkboxes para cada nivel de estudio -->
+                        <input type="checkbox" id="primaria" name="estudios" value="primaria">
+                        <label for="primaria">Primaria</label><br>
+                        <input type="checkbox" id="bachillerato" name="estudios" value="bachillerato">
+                        <label for="bachillerato">Bachillerato</label><br>
+                        <input type="checkbox" id="tecnico" name="estudios" value="tecnico">
+                        <label for="tecnico">Técnico</label><br>
+                        <input type="checkbox" id="tecnologo" name="estudios" value="tecnologo">
+                        <label for="tecnologo">Tecnólogo</label><br>
+                        <input type="checkbox" id="pregrado" name="estudios" value="pregrado">
+                        <label for="pregrado">Pregrado</label><br>
+                        <input type="checkbox" id="especializacion" name="estudios" value="especializacion">
+                        <label for="especializacion">Especialización</label><br>
+                        <input type="checkbox" id="maestria" name="estudios" value="maestria">
+                        <label for="maestria">Maestría</label><br>
+                        <input type="checkbox" id="doctorado" name="estudios" value="doctorado">
+                        <label for="doctorado">Doctorado</label>
+                    </div>
+                </fieldset>
+
+                <!-- Sección de programa de pregrado -->
+                <fieldset>
+                    <legend>Programa de Pregrado</legend>
+                    <div>
+                        <label for="programa">Seleccione el programa al que desea inscribirse:</label><br>
+                        <!-- Lista desplegable de programas -->
+                        <select id="programa" name="programa" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="ingenieria-sistemas">Ingeniería de Sistemas</option>
+                            <option value="ingenieria-software">Ingeniería de Software</option>
+                            <option value="administracion">Administración de Empresas</option>
+                            <option value="contaduria">Contaduría</option>
+                            <option value="psicologia">Psicología</option>
+                            <option value="zootecnia">Zootecnia</option>
+                            <option value="gastronomia">Gastronomía</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Sección de mensaje -->
+                <fieldset>
+                    <legend>Mensaje</legend>
+                    <div>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Universidad de Colombia. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

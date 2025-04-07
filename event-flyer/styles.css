@@ -1,0 +1,35 @@
+body {
+    /* 10. Top and bottom padding de 50px */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    /* 11. Top y bottom margin de 0 */
+    /* 12. Left y right margin auto (centrado) */
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  
+    /* 13. Usar vw para el ancho */
+    width: 80vw;
+  
+    /* 14. min-height usando calc */
+    min-height: calc(100vh - 100px);
+  
+    /* Opcional: para centrar el texto */
+    text-align: center;
+  }
+  
+  /* 16. hr con width en % */
+  hr {
+    width: 80%;
+    margin: 20px auto; /* Para centrar */
+  }
+  
+  /* 17. section con width en % */
+  section {
+    width: 80%;
+    margin: 0 auto; /* Para centrar el contenido dentro de cada sección */
+    text-align: left; /* Ajusta si deseas alinear el texto a la izquierda */
+  }
+  

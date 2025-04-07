@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    background-color: #d8c6e0; /* Fondo púrpura claro similar a la imagen */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Contenedor principal de cartas */
+  #playing-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Contenedor para cada fila de cartas */
+  .top-row, .bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .bottom-row {
+    margin-left: 82.5px; /* Ajuste para centrar las dos cartas inferiores */
+  }
+  
+  /* Estilos básicos de las cartas */
+  .card {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 150px;  /* Tamaño unificado para todas las cartas */
+    height: 210px; /* Tamaño unificado para todas las cartas */
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .left {
+    align-self: flex-start;
+  }
+
+  .middle {
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .right {
+    align-self: flex-end;
+  }
+  
+  /* Índices de las cartas (número y palo en las esquinas) */
+  .index-top-left {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .index-bottom-right {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    transform: rotate(180deg); /* Rota 180 grados para simular una carta real */
+  }
+  
+  /* Colores para los diferentes palos */
+  .spades, .clubs {
+    color: black; /* Picas y tréboles son negros */
+  }
+  
+  .hearts, .diamonds {
+    color: red; /* Corazones y diamantes son rojos */
+  }
+  
+  /* Símbolos de los palos */
+  .symbol {
+    font-size: 24px;
+    line-height: 1;
+  }
+  
+  /* Contenedor central para símbolos */
+  .center-symbols {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra perfectamente el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+  }
+  
+  /* Disposición específica para cada tipo de carta */
+  /* As (solo 1 símbolo grande en el centro) */
+  .ace .center-symbols .symbol {
+    font-size: 60px; /* Símbolo más grande para el As */
+  }
+  
+  /* Dos (2 símbolos verticales) */
+  .two .center-symbols {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Tres (3 símbolos verticales) */
+  .three .center-symbols {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Cuatro (4 símbolos en esquinas) */
+  .four .center-symbols {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-template-rows: 1fr 1fr; /* Dos filas */
+    gap: 20px;
+  }
+  
+  /* Cinco (5 símbolos en patrón de dado) */
+  .five .center-symbols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
+    grid-template-rows: 1fr 1fr 1fr; /* Tres filas */
+    gap: 5px;
+  }
+  
+  /* El tercer símbolo (central) del 5 se coloca en el centro */
+  .five .center-symbols .symbol:nth-child(3) {
+    grid-column: 1 / span 2; /* Ocupa ambas columnas */
+    grid-row: 2; /* Se coloca en la fila del medio */
+  }

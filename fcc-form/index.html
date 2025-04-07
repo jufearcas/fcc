@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuración de caracteres y viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Contact Form</title>
+    <!-- Vinculación con el archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal del formulario -->
+    <div class="form-container">
+        <!-- Formulario de contacto -->
+        <form action="#" method="post">
+            <!-- Título del formulario -->
+            <h2>Contact Us</h2>
+            
+            <!-- Grupo de campo para el nombre -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <!-- Campo de entrada para el nombre -->
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            
+            <!-- Grupo de campo para el email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <!-- Campo de entrada para el email -->
+                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+            </div>
+            
+            <!-- Grupo de campo para el mensaje -->
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <!-- Área de texto para el mensaje -->
+                <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+            </div>
+            
+            <!-- Botón de envío del formulario -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

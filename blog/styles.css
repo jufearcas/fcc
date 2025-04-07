@@ -1,0 +1,49 @@
+.blog-post-card {
+  background-color: #ffffff; /* Sets a white background */
+  padding: 20px;            /* Adds space inside the card */
+  border: 1px solid #ccc;   /* Adds a thin gray border */
+  border-radius: 10px;      /* Rounds the corners of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  width: 300px;             /* Sets the card width */
+  text-align: center;       /* Centers the text inside the card */
+  margin: 20px auto;        /* Centers the card horizontally */
+}
+
+.post-img {
+  width: 100%;              /* Makes the image fill the card's width */
+  border-bottom: 1px solid #ccc; /* Adds a border below the image */
+  border-radius: 10px 10px 0 0; /* Matches the card's top rounded corners */
+  display: block;           /* Ensures the image behaves as a block element */
+}
+
+.post-content {
+  padding: 10px;            /* Adds space inside the content area */
+  text-align: left;         /* Aligns the text to the left */
+}
+
+.post-title {
+  font-size: 1.5rem;        /* Sets the title font size */
+  margin: 10px 0;           /* Adds space above and below the title */
+  color: #4322d6;           /* Sets a dark blue color for the title */
+}
+
+.post-excerpt {
+  font-size: 1rem;          /* Sets the excerpt font size */
+  margin: 10px 0;           /* Adds space above and below the excerpt */
+  color: #333333;           /* Sets a dark gray color for the excerpt */
+}
+
+.read-more {
+  display: inline-block;    /* Makes the link behave like a button */
+  margin: 10px 0;           /* Adds space above and below the link */
+  padding: 10px 20px;       /* Adds space inside the link */
+  background-color: #007bff; /* Sets a blue background */
+  color: #ffffff;           /* Sets the text color to white */
+  text-decoration: none;    /* Removes the underline */
+  border-radius: 5px;       /* Rounds the corners of the button */
+  transition: background-color 0.3s ease; /* Adds a smooth hover effect */
+}
+
+.read-more:hover {
+  background-color: #0056b3; /* Darkens the background on hover */
+}
