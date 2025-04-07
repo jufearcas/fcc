@@ -1,17 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
+    font-family: Arial, sans-serif; /* Define la fuente principal de la página */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 50px; /* Agrega un margen superior de 50px */
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 10px 20px; /* Define el relleno interno del botón */
+    font-size: 16px; /* Establece el tamaño de la fuente del botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
 }
 
 #message {
-    margin-top: 20px;
-    font-size: 18px;
-    color: green;
+    margin-top: 20px; /* Agrega un margen superior de 20px al mensaje */
+    font-size: 18px; /* Establece el tamaño de la fuente del mensaje */
+    color: green; /* Cambia el color del texto del mensaje a verde */
 }
